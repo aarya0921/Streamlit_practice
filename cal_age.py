@@ -1,7 +1,7 @@
 import streamlit as st
 from datetime import date
 
-st.title("🎂 Age Calculator")
+st.title("AGE CALCULATOR")
 
 # 1. Input birth date
 birth_date = st.date_input("Enter your Birth Date",min_value=date(1900, 1, 1), max_value=date.today(), key="birth_date" )
@@ -24,4 +24,4 @@ if birth_date and current_date:
         )
 
         # 4. Output
-        st.success(f"🎉 You are {age_years} years old.")
+        st.success(f" You are {age_years} years old.")
